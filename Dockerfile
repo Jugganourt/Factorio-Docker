@@ -28,6 +28,4 @@ RUN mkdir factorio/mods && \
 RUN useradd factorio && \
     chown -R factorio:factorio /home/factorio
 
-#VOLUME factorio
-
- CMD factorio/bin/x64/factorio --server-settings factorio/settings/server-settings.json --start-server-load-latest 
+CMD factorio/bin/x64/factorio --server-settings factorio/settings/server-settings.json --start-server-load-latest 
