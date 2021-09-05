@@ -5,10 +5,10 @@ services:
     image: jugganourt/factorio:1.0.0
     container_name: "factorio"
     volumes: 
-      - "/docker/factorio/saves:/home/factorio/saves"
-      - "/docker/factorio/mods:/home/factorio/mods "
-      - "/docker/factorio/settings:/home/factorio/settings"
+      - "/docker/factorio/factorio/saves:/home/factorio/saves"
+      - "/docker/factorio/factorio/mods:/home/factorio/mods "
+      - "/docker/factorio/factorio/settings:/home/factorio/settings"
     ports: 
       - "34197:34197/udp"
       - "27015:27015/tcp"
-    restart: alwasys
+    restart: always
